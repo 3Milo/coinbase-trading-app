@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # this is private
-src/api/keys.json
+/src/api/keys.json
