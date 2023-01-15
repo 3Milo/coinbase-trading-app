@@ -2,8 +2,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders main bar with select fields', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const coinField = screen.getByText('BTC');
+  const currencyField = screen.getByText('USD');
+  expect(coinField).toBeInTheDocument();
+  expect(currencyField).toBeInTheDocument();
 });
